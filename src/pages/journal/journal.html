@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Timer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="journal__table">
+  <!-- Header -->
+  <ion-row class="journal__header">
+    <ion-col><strong>Timer</strong></ion-col>
+    <ion-col><strong>Day</strong></ion-col>
+    <ion-col><strong>Time</strong></ion-col>
+  </ion-row>
+
+  <!-- Table body -->
+  <ion-row *ngFor="let records of journal" class="journal__row">
+    <ion-col>{{records.timer}}</ion-col>
+    <ion-col>{{records.day}}</ion-col>
+    <ion-col>{{records.shortTime}}</ion-col>
+  </ion-row>
+</ion-content>

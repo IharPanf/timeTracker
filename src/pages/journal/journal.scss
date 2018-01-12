@@ -1,0 +1,15 @@
+.journal {
+
+  &__header {
+    background: #2d2d2d;
+    color: #ffffff;
+  }
+
+  &__row {
+    background: #ddd;
+  }
+
+  &__row:nth-child(2n) {
+    background: #ffffff;
+  }
+}

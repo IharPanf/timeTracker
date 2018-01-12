@@ -1,14 +1,36 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Timer
     </ion-title>
+    <ion-buttons end>
+      <button ion-button float-right (click)="getJournal()" >
+        <ion-icon name="document"></ion-icon>
+        <span padding-left >Journal</span>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-content class="card-background-page">
+    <ion-card
+       text-right
+       color="secondary"
+       style = "height: 45%"
+       (click)="setData('timer1')"
+       [ngClass] = "getClassName('timer1')">
+      <div padding class="card-title">Timer 1</div>
+    </ion-card>
+
+    <ion-card
+       text-right
+       color="danger"
+       style = "height: 45%"
+       (click)="setData('timer2')"
+       [ngClass] = "getClassName('timer2')">
+      <div padding class="card-title">Timer 2</div>
+    </ion-card>
+
+  </ion-content>
 </ion-content>
