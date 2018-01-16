@@ -21,6 +21,7 @@
        (click)="setData('timer1')"
        [ngClass] = "getClassName('timer1')">
       <div padding class="card-title">Timer 1</div>
+      <div padding class="last-time-label" [textContent] = "getLastValue('timer1')"></div>
     </ion-card>
 
     <ion-card
@@ -30,6 +31,7 @@
        (click)="setData('timer2')"
        [ngClass] = "getClassName('timer2')">
       <div padding class="card-title">Timer 2</div>
+      <div padding class="last-time-label" [textContent] = "getLastValue('timer2')"></div>
     </ion-card>
 
   </ion-content>
